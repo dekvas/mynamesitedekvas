@@ -1,0 +1,479 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7PS6J5');
+</script>
+<!-- End Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- Тут вставляем описание страницы -->
+
+<meta name="keywords" content="пример решения, формула Пуассона, задачи" />
+<meta name="description" content="Онлайн учебник по теории вероятностей. Формула Пуассона. Примеры решения задач" />
+
+<meta property="og:site_name" content="МатБюро">
+<meta property="og:title" content="пример решения, формула Пуассона, задачи">
+<meta property="og:description" content="Онлайн учебник по теории вероятностей. Формула Пуассона. Примеры решения задач">
+
+
+<title>Приближенная формула Пуассона, примеры решений и теория. Онлайн учебник по теории вероятностей </title>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/cusel.css" />
+
+<link rel="stylesheet" href="css/jquery-ui.min.css" />
+<link rel="stylesheet" href="css/jquery.ui.datepicker.min.css" />
+<link rel="stylesheet" href="css/colorbox.css" />
+<link rel="stylesheet" href="css/jquery.bxslider.min.css" />
+
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon-16.png" sizes="16x16">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+
+<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon_180.png" />
+
+
+
+
+<link rel="canonical" href="https://www.matburo.ru/tvbook_sub.php?p=par19"/>
+<!-- Тут проверяем-подключаем дополнительные стили-скрипты -->
+
+<script defer type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script defer type="text/javascript" src="js/cusel-min-2.5.js"></script>
+<script defer src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script defer src="js/jquery.ui.datepicker-ru.min.js" type="text/javascript"></script>
+<script defer src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script defer src="js/jquery.colorbox-min.js" type="text/javascript"></script>
+<script defer src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+<script defer type="text/javascript" src="js/common.js"></script>
+<script defer type="text/javascript" src="js/share_b.js"></script>
+<script defer type="text/javascript" src="js/lb.js"></script>
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7PS6J5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+<div id="page">
+    <div id="header">
+        <div id="logo">
+            <a href="index.html"><img src="images/logo.png" width="224" height="159" class="logo-full" /></a>
+			<a href="index.html"><img src="images/logo-mob.png" width="289" height="62" style="display:none;" class="logo-mob" /></a>
+        </div>
+
+        <noindex>
+		<div id="slogan">
+            <strong>
+			    <span>Учебник по теории вероятностей</span><br>Формула Пуассона            </strong>
+        </div>
+		</noindex>
+    </div>
+
+    <div id="main">
+        <div id="content">
+		<header>
+		<noindex>
+		<div class="pathway">
+		    <a href="index.html"><span>МатБюро</span></a> <a href="tv.php.html"><span>Теория вероятностей</span></a> <a href="tv_book.php.html"><span>Учебник по теории вероятностей</span></a> Формула Пуассона            </div>
+
+
+            <div class="quote">
+			               </div>
+		</noindex>
+		</header>
+
+		<main>
+			<div class="post">
+
+
+			  
+
+    <h1>Учебник по теории вероятностей</h1>
+
+
+	<h2 class="blue_title"><span>1.9. Формула Пуассона</span></h2>
+    
+
+    <div class="tvbook">
+
+    
+
+    
+    
+  <div class="share-block">
+    <span class="share-label">Поделиться</span>
+    <a class="share-btn vk" title="Поделиться в VK">
+      <div class="b-icon"></div>
+      <span>ВКонтакте</span>
+    </a>
+	<a class="share-btn telegram" title="Поделиться в Telegram">
+      <div class="b-icon"></div>
+      <span>Telegram</span>
+    </a>
+    <a class="share-btn facebook" title="Поделиться в Facebook">
+      <div class="b-icon"></div>
+      <span>Facebook</span>
+    </a>
+    
+  </div> 
+
+<p>При большом числе испытаний $n$ и малой вероятности $р$ формулой Бернулли пользоваться неудобно, например, $0.97^{999}$ вычислить трудно. В этом случае для вычисления вероятности того, что в $n$ испытаниях ($n$ – велико) событие произойдет $k$ раз, используют <i class="opr">формулу Пуассона</i>:</p>
+
+$$
+P_n(k)=\frac{\lambda^k}{k!}\cdot e^{-\lambda}.
+$$
+<p>Здесь $\lambda=n \cdot p$ обозначает среднее число появлений события в $n$ испытаниях.</p>
+
+<p>Эта формула дает удовлетворительное приближение для $p \le 0,1$ и $np \le 10$. Cобытия, для которых применима формула Пуассона, называют <i class="opr">редкими</i>, так как вероятность их осуществления очень мала (обычно порядка 0,001-0,0001).</p>
+
+<p>При больших $np$ рекомендуется применять <a href="tvbook_sub.php@p=par110.html">формулы Лапласа</a> (Муавра-Лапласа). </p>
+
+
+
+<p class="all_feedback">Бесплатный <a href="tvart_sub.php@p=calc_bern_poisson.html">онлайн-калькулятор для формулы Пуассона</a> </p>
+
+
+
+<h2 class="blue_title"><span>Примеры решений на формулу Пуассона</span></h2>
+
+<div class="primer">
+<p><b>Пример.</b> Устройство состоит из 1000 элементов, работающих независимо один от другого. Вероятность отказа любого элемента в течении времени <i>Т</i> равна 0,002. Найти вероятность того, что за время <i>Т</i> откажут ровно три элемента.</p>
+
+<p><b>Решение.</b> По условию дано: $n=1000$, $p=0,002$, $\lambda=np=2$, $k=3$.</p>
+<p>Искомая вероятность после подстановки в формулу:</p>
+$$
+P_{1000}(3)=\frac{\lambda^3}{3!}\cdot e^{-\lambda}=\frac{2^3}{3!}\cdot e^{-2} \approx 0,18.
+$$
+</div>
+
+
+<div class="primer">
+<p><b>Пример.</b> Завод отправил на базу 500 изделий. Вероятность повреждения изделия в пути 0,004. Найти вероятность того, что в пути повреждено меньше трех изделий.</p>
+
+<p><b>Решение.</b> По условию дано: $n=500$, $p=0,004$, $\lambda=np=2$.</p>
+<p>По теореме сложения вероятностей получаем вероятность того, что повреждено меньше 3 изделий, то есть 0, 1 или 2 изделия:</p>
+$$
+P=P_{500}(0)+P_{500}(1)+P_{500}(2) = \\ =\frac{2^0}{0!}\cdot e^{-2} + \frac{2^1}{1!}\cdot e^{-2} + \frac{2^2}{2!}\cdot e^{-2} =\\ = 
+(1+2+4/2)\cdot e^{-2} \approx 0,68.
+$$
+</div>
+
+
+<div class="primer">
+<p><b>Пример.</b> Магазин получил 1000 бутылок минеральной воды. Вероятность того, что при перевозке бутылка окажется разбитой, равна 0,003. Найти вероятность того, что магазин получит более двух разбитых бутылок.</p>
+
+<p><b>Решение.</b> По условию дано: $n=1000$, $p=0,003$, $\lambda=np=3$.</p>
+<p>Чтобы найти вероятность $P_{1000}(k\gt 2)$ того, что магазин получит более двух разбитых бутылок, используем переход к противоположному событию (разбито не более 2 бутылок, то есть 0, 1 или 2):</p>
+$$
+P_{1000}(k\gt 2) = 1 - P_{1000}(k\le 2) = 1 - (P_{1000}(0)+P_{1000}(1)+P_{1000}(2)) = \\=1 - \left(\frac{3^0}{0!}\cdot e^{-3} + \frac{3^1}{1!}\cdot e^{-3} + \frac{3^2}{2!}\cdot e^{-3} \right) =\\ 
+ =1 - \left(1 + 3 + 9/2 \right)\cdot e^{-3} \approx 0,568.
+$$
+
+</div>
+
+
+<p class="all_feedback">Как считать по <a href="tvart_sub.php@p=excel_laplace.html">формуле Пуассона в Эксель</a> </p>
+
+
+    </div>
+
+	
+	<h2 class="blue_title"><span>Видео о решении задач с помощью формулы Пуассона</span></h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wKLifcps6Kc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Подробную статью о формуле с примерами, онлайн калькулятор и расчетный файл к видеоролику вы найдете <a href="tvart_sub.php@p=calc_bern_poisson.html">тут</a>.</p>
+
+<h2 class="blue_title"><span>Полезные ссылки</span></h2>
+
+    <ul  class="list3">
+    <li>Далее: <a href="tvbook_sub.php@p=par110.html">Теоремы Муавра-Лапласа</a>
+    <li>Назад: <a href="tvbook_sub.php@p=par18.html">Наивероятнейшее число успехов</a>
+    <br><br>
+    <li><a href="ex_tv.php@p1=tvbernul.html">Примеры на формулы Бернулли и Пуассона</a> 
+    <li><a href="tv_book.php.html">Учебник по теории вероятностей</a>
+    <li><a href="tv_spr.php.html">Скачать формулы по теории вероятностей</a>
+    
+    </ul>
+	
+	
+    <br><div class="request">
+                    Окажем консультацию по теории вероятности
+                    <div class="request_btn">
+                        <a href="order_express.php@id_subject=3&amp;int_from=tv_book19.html">Форма экспресс-заказа</a>
+                    </div>
+     </div>
+
+			</div>
+
+		</main>
+        </div>
+
+        <div id="content_left">
+		<nav>
+
+					<div class="wrap-mob-menu"><div onclick="toggle('#vipad-1');" class="mob-menu-button"><div class="hide">Меню</div></div>
+		<div class="link-zakaz">
+			<a href="order_express.php.html">Отправить заказ</a>
+		</div>
+		<div id="vipad-1">
+		<div class="nav">
+                <div class="
+				title1 mat">
+                    <a href="index.html">МатБюро</a>
+                </div>
+                <ul>
+                    <li >
+					<b>
+
+					<a href="order_express.php@int_from=tv_book_menu.html">Отправить заказ</a>					</b></li>
+					<li >
+					<a href="subjects.php.html">Услуги и предметы</a></li>
+					<li >
+					<a href="online.php.html">Онлайн-помощь</a></li>
+					<li >
+					<a href="sub_online.php@p=test.html">Сдача тестов</a></li>
+
+                    <li >
+					<a href="gb.php.html">Отзывы клиентов</a></li>
+                    <li >
+					<a href="prices.php.html">Цены и оплата</a></li>
+					<!-- <li >
+					<a href="/mprofi.php">Почему МатБюро?</a></li>   -->
+                    <li >
+					<a href="order.php.html">О заказе и гарантиях</a></li>
+					<li >
+					<a href="appear.php.html">Оформление работ</a></li>
+					<li class="last">
+					<a href="faq.php.html">Вопросы и ответы</a></li>
+
+                </ul>
+            </div>
+            <div class="nav">
+                <div class="
+				title1 adv">
+                    <a href="useful.php.html">Полезные материалы</a>
+                </div>
+                <ul>
+                    <li >
+					<a href="examples.php.html">Примеры решений задач</a></li>
+
+                    <li >
+					<a href="st_subject.php@p=resh.html">Онлайн решение задач</a></li>
+                    <li >
+					<a href="st_subject.php@p=prog.html">Программы-решатели</a></li>
+					<li >
+					<a href="stuff.php.html">Учебники и видеоуроки</a></li>
+					<li >
+					<a href="math_articles.php.html">Статьи о математике</a></li>
+					
+					<li >
+					<a href="neuro_articles.php.html">Нейросети и учеба</a></li>
+                    <li class="last">
+					<a href="st_subject.php@p=form.html">Формулы и справочники</a></li>
+                </ul>
+            </div>
+            <div class="nav">
+                <div class="
+				title1 theory">
+                    <a href="tv.php.html">Теория вероятностей</a>
+                </div>
+                <ul>
+                    <li class="active">
+					<a href="tv_book.php.html">Онлайн учебник</a></li>
+
+                    <li >
+					<a href="ex_subject.php@p=tv.html">Примеры решений </a></li>
+					<li >
+					<a href="tv_calc.php.html">Онлайн калькуляторы</a></li>
+                    <li >
+					<a href="tv_spr.php.html">Формулы и таблицы</a></li>
+					<li >
+					<a href="tv_art.php.html">Статьи по ТВ</a></li>
+					<li >
+					<a href="tv_video.php.html">Видеоуроки по ТВ</a></li>
+                    <li class="last">
+					<a href="st_subject.php@p=tv.html">Учебники и ссылки</a></li>
+					
+                </ul>
+            </div>
+
+
+			</div></div><script defer src="js/adaptive-menu.js" type="text/javascript"></script>
+	
+	</br>	
+	<div class="share-mini">
+    <a class="mini-btn vk" title="Поделиться в VK">
+    <div class="mini-icon"></div>
+    </a>
+    <a class="mini-btn telegram" title="Сохранить в Telegram">
+      <div class="mini-icon"></div>
+    </a>
+    <a class="mini-btn facebook" title="Поделиться в Facebook">
+      <div class="mini-icon"></div>
+    </a>
+    </div>
+		</nav>
+
+        </div>
+
+
+		<div id="content_right">
+		<aside>
+
+		<div class="recommended_banner">
+                <div class="title2">
+                    Решение задач
+                </div>
+<a href="https://www.math-tasks.com/index.php?from=banner_10000" target="_blank" title="Найти задачу по теории вероятности решебнике"><img src="Data/180x180_math-tasks_com.gif" width="180" height="180" alt="Решебник по теории вероятностей"/></a>            </div><div class="recommended">
+                <div class="title2">
+                    Оптимальный выбор
+                </div>
+                <p>МатБюро помогает студентам с 2006 года. Всё это время мы поддерживаем прекрасную репутацию и наилучшие условия &laquo;цена-качество&raquo;. </p>
+  
+   <p><a href="mprofi.php.html"><img class="bounded" src="Data/quality.png" width="45" height="70" alt="качество матбюро"></a>
+   <b>Мы предлагаем:</b><br>
+    Грамотную и подробную консультацию и решение за разумную стоимость.
+  </p>
+            </div>		</aside>
+
+
+		</div>
+
+        <div class="clear"></div>
+    </div>
+
+
+	<div id="advantages">
+        <ul>
+            <li class="i2">
+                <a href="gb.php.html">
+                    <span>Количество</span>
+                    Более 98000 <br> выполненных<br> заказов
+                </a>
+            </li>
+            <li class="i3">
+                <a href="prices.php.html">
+                    <span>Цены</span>
+                    Разумные и<br> обоснованные<br> цены
+                </a>
+            </li>
+            <li class="i1">
+                <a href="index.php.html">
+                    <span>Опыт</span>
+                    Помогаем студентам <br>в решении задач<br> уже 19 лет
+                </a>
+            </li>
+			<li class="i4">
+                <a href="appear.php.html">
+                    <span>Кредо</span>
+                    Качество, <br>ответственность<br> и уважение
+                </a>
+            </li>
+            <li class="i5">
+                <a href="order_express.php@int_from=advantages.html">
+                    <span>И еще</span>
+                    Мы рады <br>выполнить<br> ваш заказ
+                </a>
+            </li>
+        </ul>
+    </div>
+	<footer>
+    <div id="footer">
+        <div id="foot_links">
+            <ul>
+                      <li><img src="Data/vk.png" width="20px" alt="vk">&nbsp; <a href="https://vk.com/matburo_ru"  target="_blank">Сообщество ВКонтакте</a></li>
+				<li><img src="Data/wa20.png" width="20px" alt="WhatsApp">&nbsp; <a href="https://api.whatsapp.com/send?phone=79046290455">Написать в WhatsApp</a></li>
+				<li><img src="Data/tg.png" width="20px" alt="Telegram">
+				 <a href="https://t.me/MatBuro">Написать в Telegram</a></li>
+				<li><img src="Data/star.png" width="20px" alt="звездочка">&nbsp; <a href="mprofi.php.html">Почему МатБюро</a></li>
+				<!--<li><a href="vacancy.php">Вакансии</a></li>				-->
+            </ul>
+        </div>
+        <div id="foot_nav">
+            <ul>
+                <li class="contact"><a href="contact.php.html">Контакты</a></li>
+                <li class="search"><a href="searchresult.php.html">Поиск по сайту</a></li>
+                <li class="map"><a href="sitemap.php.html">Карта сайта</a></li>
+                <li class="new"><a href="opd.php.html">Политика ОПД</a></li>
+            </ul>
+			<div class="centern"><span>&copy; 2006-2025</span></div>
+        </div>
+		
+		
+        <div id="counter">
+
+
+
+
+
+<!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
+target="_blank"><img id="licnt441C" width="88" height="31" style="border:0"
+title="LiveInternet"
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+alt=""/></a><script>(function(d,s){d.getElementById("licnt441C").src=
+"https://counter.yadro.ru/hit?t57.2;r"+escape(d.referrer)+
+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+(document,screen)</script><!--/LiveInternet-->
+
+
+
+
+	<br/>
+
+	<br/>
+
+        </div>
+        <div id="foot_logo">
+            <a href="index.html"><img src="images/foot_logo.png" width="109" height="78" /></a>
+        </div>
+    </div>	</footer>
+</div>
+
+
+<!-- скрипты -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="js/MathJax.js"></script>
+
+<!-- кнопка прокрутки вызов -->
+<a href="tvbook_sub.php@p=par19.html#" class="scrollup">Наверх</a>
+
+<div id="cookie_notification">
+  <div id="cookie_text">Для работы сайта matburo.ru нужны файлы cookie и сервисы аналитики. Продолжая пользоваться сайтом, вы выражаете согласие
+  с <a href="opd.php.html">политикой в отношении обработки персональных данных</a>.</div>
+  <button id="cookie_accept">Принять</button>
+</div>
+<script type="text/javascript" src="js/cookie-notify.js"></script>
+</body>
+</html>

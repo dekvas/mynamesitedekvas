@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Метод математической индукции: задачи и решения</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- MathJax для рендеринга формул -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<div id="page">
+  <div id="header">
+    <div id="logo">
+      <a href="index.html"><img src="images/logo.png" width="224" height="159" class="logo-full"/></a>
+      <a href="index.html"><img src="images/logo-mob.png" width="289" height="62" class="logo-mob" style="display:none;"/></a>
+    </div>
+    <noindex>
+      <div id="slogan">
+        <strong>
+          <span>Примеры решений:</span><br/>
+          Метод математической индукции
+        </strong>
+      </div>
+    </noindex>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <header>
+        <noindex>
+          <div class="pathway">
+            <a href="index.html"><span>Главная</span></a>
+            <a href="examples.php.html"><span>Примеры решений</span></a>
+            <a href="ex_subject.php@p=mat_all.html"><span>Математика</span></a>
+            <a href="ex_subject.php@p=dm.html"><span>Дискретная математика</span></a>
+            Метод математической индукции
+          </div>
+        </noindex>
+      </header>
+
+      <main>
+        <div class="post">
+          <h1>Метод математической индукции: задачи и решения</h1>
+
+          <p><b>Метод полного перебора</b> конечного числа случаев называется <b>полной индукцией</b>, но в математике чаще используется более мощный метод доказательства для бесконечных множеств — <b>математическая индукция</b>, или рассуждение от <em>n</em> к <em>n+1</em>.</p>
+
+          <h2 class="blue_title"><span>Принцип математической индукции</span></h2>
+          <p>Чтобы доказать, что утверждение <em>P(n)</em> верно для всех натуральных <em>n</em>, достаточно:</p>
+          <ul class="list">
+            <li>Показать <em>P(1)</em> (базис индукции).</li>
+            <li>Показать: если <em>P(k)</em> верно, то верно и <em>P(k+1)</em> (шаг индукции).</li>
+          </ul>
+
+          <div class="share-block">
+            <span class="share-label">Поделиться</span>
+            <a class="share-btn vk" title="Поделиться в VK"><div class="b-icon"></div><span>ВКонтакте</span></a>
+            <a class="share-btn telegram" title="Поделиться в Telegram"><div class="b-icon"></div><span>Telegram</span></a>
+            <a class="share-btn facebook" title="Поделиться в Facebook"><div class="b-icon"></div><span>Facebook</span></a>
+          </div>
+
+          <h2 class="blue_title"><span>Задачи и решения</span></h2>
+
+          <p><b>Задача 1.</b> Докажите, что \(5^n - 4n + 15\) делится на 16 при всех \(n \ge 0\).</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/MMI2.pdf">Решение</a></div><br/>
+
+          <p><b>Задача 2.</b> Доказать, что для любого натурального \(n\)
+          \[
+            a_n = 2n^3 + 3n^2 + 7n
+          \]
+          делится на 6.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/MMI8.pdf">Решение</a></div><br/>
+
+          <p><b>Задача 3.</b> Докажите, что \(4^{2n-1} + 1\) кратно 5 для всех \(n\ge1\).</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/MMI11.pdf">Решение</a></div><br/>
+
+          <p><b>Задача 4.</b> Показать, что \(6^{2n-2} + 3^{n+1} + 3^{n-1}\) кратно 11 для любого \(n\ge1\).</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/MMI12.pdf">Решение</a></div><br/>
+
+          <h3>Доказательство равенств и неравенств</h3>
+
+          <p><b>Задача 5.</b> Доказать равенство
+          \[
+            1^2 + 2^2 + \dots + n^2 = \frac{n(n+1)(2n+1)}{6}.
+          \]</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/MMI1.pdf">Решение</a></div><br/>
+
+          <p><b>Задача 6.</b> Доказать:
+          \[
+            p + (p+1) + \dots + (p+n) = \frac{(2p+n)(n+1)}{2}.
+          \]</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/MMI5.pdf">Решение</a></div><br/>
+
+          <p><b>Задача 7.</b> Доказать неравенство
+          \[
+            \frac1{n+1} + \frac1{n+2} + \dots + \frac1{2n} > \frac{13}{24},\quad n>1.
+          \]</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/MMI6.pdf">Решение</a></div><br/>
+
+          <h3>Вычисление сумм</h3>
+
+          <p><b>Задача 11.</b> Доказать:
+          \[
+            1^2 + 3^2 + 5^2 + \dots + (2n-1)^2 = \frac{n(4n^2-1)}{3}.
+          \]</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/MMI4.pdf">Решение</a></div><br/>
+
+          <p><b>Задача 12.</b> Найдите сумму
+          \[
+            1\cdot1! + 2\cdot2! + \dots + 2013\cdot2013!.
+          \]</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/MMI3.pdf">Решение</a></div><br/>
+
+          <div class="back">
+            <a href="ex_subject.php@p=dm.html">Назад: Дискретная математика</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="content_left">
+      <nav>
+        <div class="wrap-mob-menu">
+          <div onclick="toggle('#vipad-1');" class="mob-menu-button"><div class="hide">Меню</div></div>
+        </div>
+        <div id="vipad-1">
+          <div class="nav">
+            <div class="title1 adv"><a href="useful.php.html">Полезные материалы</a></div>
+            <ul>
+              <li><a href="examples.php.html">Примеры решений задач</a></li>
+              <li><a href="st_subject.php@p=resh.html">Онлайн решение задач</a></li>
+              <li><a href="st_subject.php@p=prog.html">Программы-решатели</a></li>
+              <li><a href="stuff.php.html">Учебники и видеоуроки</a></li>
+              <li><a href="math_articles.php.html">Статьи о математике</a></li>
+              <li><a href="neuro_articles.php.html">Нейросети и учеба</a></li>
+              <li class="last"><a href="st_subject.php@p=form.html">Формулы и справочники</a></li>
+            </ul>
+          </div>
+          <div class="nav">
+            <div class="title1 theory"><a href="tv.php.html">Теория вероятностей</a></div>
+            <ul>
+              <li><a href="tv_book.php.html">Онлайн учебник</a></li>
+              <li><a href="ex_subject.php@p=tv.html">Примеры решений</a></li>
+              <li><a href="tv_calc.php.html">Онлайн калькуляторы</a></li>
+              <li><a href="tv_spr.php.html">Формулы и таблицы</a></li>
+              <li class="last"><a href="st_subject.php@p=tv.html">Учебники и ссылки</a></li>
+            </ul>
+          </div>
+        </div>
+        <script defer src="js/adaptive-menu.js"></script>
+      </nav>
+    </div>
+
+    <div id="content_right">
+      <aside>
+        <div class="recommended_banner">
+          <div class="title2">Полезный ресурс</div>
+          <a href="index.html"><img src="Data/matburo_girl.png" width="200" height="257" alt="Полезный баннер"/></a>
+        </div>
+        <div class="responses">
+          <div class="title2"><a href="gb.php.html">Отзывы</a></div>
+          <ul>
+            <li>Елена:<br/><p>С помощью интерактивных задач я поняла методы численного интегрирования! Отличный сервис и понятные объяснения.</p></li>
+            <li>Дмитрий:<br/><p>Уроки по решению систем линейных уравнений и разложению матриц помогли мне справиться с курсовым проектом.</p></li>
+            <li>Ольга:<br/><p>Люблю онлайн-калькуляторы – они мгновенно показывают результаты.</p></li>
+            <li class="last">Алексей:<br/><p>Пошаговые решения позволили освоить численные методы быстро.</p></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+  <footer>
+    <div id="footer">
+      <div id="foot_links">
+        <ul>
+          <li><img src="Data/vk.png" width="20px" alt="vk">&nbsp;<a href="#">Сообщество ВКонтакте</a></li>
+          <li><img src="Data/wa20.png" width="20px" alt="WhatsApp">&nbsp;<a href="#">Написать в WhatsApp</a></li>
+          <li><img src="Data/tg.png" width="20px" alt="Telegram">&nbsp;<a href="#">Написать в Telegram</a></li>
+        </ul>
+      </div>
+      <div id="foot_nav">
+        <ul>
+          <li class="contact"><a href="contact.php.html">Контакты</a></li>
+          <li class="search"><a href="searchresult.php.html">Поиск по сайту</a></li>
+          <li class="new"><a href="opd.php.html">Политика ОПД</a></li>
+        </ul>
+      </div>
+      <div id="foot_logo">
+        <a href="index.html"><img src="images/foot_logo.png" width="109" height="78"/></a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

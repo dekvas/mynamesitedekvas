@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Примеры решений задач по эконометрике</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- MathJax для рендеринга формул -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<div id="page">
+  <div id="header">
+    <div id="logo">
+      <a href="index.html"><img src="images/logo.png" width="224" height="159" class="logo-full" /></a>
+      <a href="index.html"><img src="images/logo-mob.png" width="289" height="62" class="logo-mob" style="display:none;" /></a>
+    </div>
+    <noindex>
+      <div id="slogan">
+        <strong>
+          <span>Бесплатные примеры решений:</span><br/>Эконометрика
+        </strong>
+      </div>
+    </noindex>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <header>
+        <noindex>
+          <div class="pathway">
+            <a href="index.html"><span>Главная</span></a>
+            <a href="examples.php.html"><span>Примеры решений задач</span></a>
+            <a href="ex_subject.php@p=econ_all.html"><span>Экономическое направление</span></a>
+            Эконометрика
+          </div>
+        </noindex>
+      </header>
+
+      <main>
+        <div class="post">
+          <h1>Примеры решений задач по эконометрике</h1>
+
+          <p>В этом разделе вы найдете готовые примеры задач с решениями по различным темам эконометрики: регрессия, корреляция, временные ряды и другие ключевые разделы. Все материалы доступны бесплатно.</p>
+
+          <br/>
+
+          <div class="share-block">
+            <span class="share-label">Поделиться</span>
+            <a class="share-btn vk" title="Поделиться в VK"><div class="b-icon"></div><span>ВКонтакте</span></a>
+            <a class="share-btn telegram" title="Поделиться в Telegram"><div class="b-icon"></div><span>Telegram</span></a>
+            <a class="share-btn facebook" title="Поделиться в Facebook"><div class="b-icon"></div><span>Facebook</span></a>
+          </div>
+
+          <h2>Задачи по эконометрике с решениями</h2>
+
+          <p><b>Задача 1.</b> По группе предприятий, производящих однородную продукцию, известно, как зависит себестоимость единицы продукции <em>y</em> от факторов, приведенных в таблице. Определите с помощью коэффициентов эластичности силу влияния каждого фактора на результат. Проранжируйте факторы по силе влияния, сделайте вывод. Данные представлены в таблице.<br/>
+            <div align="right"><a target="_blank" href="Examples/Files/Econom1.pdf">Решение задачи по эконометрике 1</a></div>
+          </p>
+
+          <p><b>Задача 2.</b> В таблице указаны парные коэффициенты корреляции. Проведите анализ целесообразности включения заданных факторов в уравнение множественной линейной регрессии.<br/>
+            <div align="right"><a target="_blank" href="Examples/Files/Econom2.pdf">Решение задачи эконометрики 2</a></div>
+          </p>
+
+          <p><b>Задача 3.</b> По некоторым территориям районов края известны значения среднего суточного душевого дохода в у.е. (фактор <em>X</em>) и процент от общего дохода на продовольственные товары (фактор <em>Y</em>). Рассчитайте параметры линейной, степенной и показательной функций и выберите оптимальную модель по средней ошибке аппроксимации и критерию Фишера.<br/>
+            <div align="right"><a target="_blank" href="Examples/Files/Econom3.pdf">Решение задачи эконометрики 3</a></div>
+          </p>
+
+          <p><b>Задача 4.</b> На основе данных о доходах <em>Y</em>, расходах на промышленные товары <em>X<sub>2</sub></em> и наличии детей (фиктивная переменная <em>D</em>):<br/>
+            <em>Y = b₀ + b₂X₂ + bD</em> (где <em>D = 1</em>, если дети есть; <em>D = 0</em> при их отсутствии). Проверьте статистическую значимость коэффициентов и сделайте выводы.<br/>
+            <div align="right"><a target="_blank" href="Examples/Files/Econom4.pdf">Решение задачи эконометрики 4</a></div>
+          </p>
+
+          <p><b>Задача 5.</b> Постройте линии регрессии <em>Y</em> на <em>X</em> и <em>X</em> на <em>Y</em> для двумерной СВ (<em>X, Y</em>) с заданным законом распределения. Рассчитайте коэффициенты корреляции и детерминации.<br/>
+            <div align="right"><a target="_blank" href="Examples/Files/Econom5.pdf">Задача на линейную регрессию</a></div>
+          </p>
+
+          <p><b>Задача 6.</b> 1) Постройте поле корреляции результативного и факторного признаков.<br/>
+            2) Определите параметры уравнения парной линейной регрессии и дайте их интерпретацию.<br/>
+            3) Постройте теоретическую линию регрессии на фоне поля корреляции.<br/>
+            4) Рассчитайте коэффициенты корреляции и детерминации.<br/>
+            5) Оцените статистическую значимость коэффициента регрессии и уравнения в целом (α = 0.95).<br/>
+            6) Постройте доверительные интервалы для прогноза и генерального значения.<br/>
+            7) Определите коэффициент эластичности и поясните его.<br/>
+            <div align="right"><a target="_blank" href="Examples/Files/Econom6.pdf">Задача на парную регрессию 6</a></div>
+          </p>
+
+          <p><b>Задача 7.</b> В таблице приведены данные о прибыли <em>Y</em> (тыс. руб.) в зависимости от доли товара <em>A</em> в грузообороте <em>X</em> (%).<br/>
+            1. Постройте корреляционное поле и определите характер зависимости.<br/>
+            2. Найдите параметры линейной регрессии и их экономический смысл.<br/>
+            3. Рассчитайте коэффициент парной корреляции и оцените тесноту связи.<br/>
+            4. Определите коэффициент детерминации <em>R²</em>.<br/>
+            5. Оцените значимость уравнения регрессии (α = 0.05).<br/>
+            6. Изобразите регрессионную прямую и сделайте вывод.<br/>
+            7. Рассчитайте прогноз при заданном <em>x₀</em>.<br/>
+            <div align="right"><a target="_blank" href="Examples/Files/Econom7.pdf">Решение задачи по линейной регрессии</a></div>
+          </p>
+
+          <p><b>Задача 8.</b> По группе заводов уравнение регрессии себестоимости <em>Y</em> от уровня оснащенности <em>X</em>:<br/>
+            <em>yᵢ = 20 + 700 / X</em>. Доля остаточной дисперсии 0.19. Найдите индекс корреляции и проверьте значимость уравнения (критерий Фишера, α = 0.05).<br/>
+            <div align="right"><a target="_blank" href="Examples/Files/Econom8.pdf">Статистическая значимость регрессии</a></div>
+          </p>
+
+          <p><b>Задача 9.</b> По предприятиям региона зависимость выработки <em>Y</em> от ввода фондов <em>x₁</em> и доли квалифицированных <em>x₂</em>:<br/>
+            <em>yᵢ = −1.725 + 0.903x₁ + 0.081x₂</em>, <em>ȳ=9.6</em>, <em> x̄₁=6.27</em>, <em> x̄₂=22.3</em>. Определите влияние факторов (коэффициенты эластичности), ранжируйте их и найдите скорректированный коэффициент детерминации при R² = 0.74.<br/>
+            <div align="right"><a target="_blank" href="Examples/Files/Econom9.pdf">Задача на линейную регрессию</a></div>
+          </p>
+
+          <p><b>Задача 10.</b> Проверьте остатки регрессии <em>y=bx+a</em> на гетероскедастичность тестом Голдфельда–Квандта (α=0.01), при <em>S₁=0.07</em>, <em>S₂=0.92</em>, <em>k₁=k₂=6</em>.<br/>
+            <div align="right"><a target="_blank" href="Examples/Files/Econom10.pdf">Решение: тест Голдфельда–Квандта</a></div>
+          </p>
+
+          <p><b>Задача 11.</b> Определите идентифицированность уравнений модели по необходимому и достаточному условию.<br/>
+            <div align="right"><a target="_blank" href="Examples/Files/Econom11.pdf">Идентифицированность уравнений</a></div>
+          </p>
+
+          <div class="back">
+            <a href="ex_subject.php@p=ec.html">Решения по эконометрике и статистике</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="content_left">
+      <nav>
+        <div class="wrap-mob-menu">
+          <div onclick="toggle('#vipad-1');" class="mob-menu-button"><div class="hide">Меню</div></div>
+        </div>
+        <div id="vipad-1">
+          <div class="nav">
+            <div class="title1 adv"><a href="useful.php.html">Полезные материалы</a></div>
+            <ul>
+              <li><a href="examples.php.html">Примеры решений задач</a></li>
+              <li><a href="st_subject.php@p=resh.html">Онлайн решение задач</a></li>
+              <li><a href="st_subject.php@p=prog.html">Программы-решатели</a></li>
+              <li><a href="stuff.php.html">Учебники и видеоуроки</a></li>
+              <li><a href="math_articles.php.html">Статьи о математике</a></li>
+              <li><a href="neuro_articles.php.html">Нейросети и учеба</a></li>
+              <li class="last"><a href="st_subject.php@p=form.html">Формулы и справочники</a></li>
+            </ul>
+          </div>
+          <div class="nav">
+            <div class="title1 theory"><a href="tv.php.html">Теория вероятностей</a></div>
+            <ul>
+              <li><a href="tv_book.php.html">Онлайн учебник</a></li>
+              <li><a href="ex_subject.php@p=tv.html">Примеры решений</a></li>
+              <li><a href="tv_calc.php.html">Онлайн калькуляторы</a></li>
+              <li><a href="tv_spr.php.html">Формулы и таблицы</a></li>
+              <li><a href="tv_art.php.html">Статьи по ТВ</a></li>
+              <li class="last"><a href="st_subject.php@p=tv.html">Учебники и ссылки</a></li>
+            </ul>
+          </div>
+        </div>
+        <script defer src="js/adaptive-menu.js"></script>
+        <br/>
+        <div class="share-mini">
+          <a class="mini-btn vk" title="Поделиться в VK"><div class="mini-icon"></div></a>
+          <a class="mini-btn telegram" title="Поделиться в Telegram"><div class="mini-icon"></div></a>
+          <a class="mini-btn facebook" title="Поделиться в Facebook"><div class="mini-icon"></div></a>
+        </div>
+      </nav>
+    </div>
+
+    <div id="content_right">
+      <aside>
+        <div class="recommended_banner">
+          <div class="title2">Полезный ресурс</div>
+          <a href="index.html">
+            <img src="Data/matburo_girl.png" width="200" height="257" alt="Полезный баннер"/>
+          </a>
+        </div>
+        <div class="responses">
+          <div class="title2"><a href="gb.php.html">Отзывы</a></div>
+          <ul>
+            <li>Елена:<br/><p>С помощью интерактивных задач я наконец поняла методы численного интегрирования! Отличный сервис и понятные объяснения.</p></li>
+            <li>Дмитрий:<br/><p>Уроки по решению систем линейных уравнений и разложению матриц помогли мне справиться с курсовым проектом.</p></li>
+            <li>Ольга:<br/><p>Люблю онлайн-калькуляторы – они мгновенно показывают результаты и строят графики.</p></li>
+            <li class="last">Алексей:<br/><p>Благодаря подробным пошаговым решениям я свободно применяю численные методы в своих исследованиях.</p></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+  <footer>
+    <div id="footer">
+      <div id="foot_links">
+        <ul>
+          <li><img src="Data/vk.png" width="20px" alt="vk">&nbsp;<a href="#">Сообщество ВКонтакте</a></li>
+          <li><img src="Data/wa20.png" width="20px" alt="WhatsApp">&nbsp;<a href="#">Написать в WhatsApp</a></li>
+          <li><img src="Data/tg.png" width="20px" alt="Telegram">&nbsp;<a href="#">Написать в Telegram</a></li>
+        </ul>
+      </div>
+      <div id="foot_nav">
+        <ul>
+          <li class="contact"><a href="contact.php.html">Контакты</a></li>
+          <li class="search"><a href="searchresult.php.html">Поиск по сайту</a></li>
+          <li class="new"><a href="opd.php.html">Политика ОПД</a></li>
+        </ul>
+      </div>
+      <div id="foot_logo">
+        <a href="index.html"><img src="images/foot_logo.png" width="109" height="78"/></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="scrollup">Наверх</a>
+</div>
+</body>
+</html>

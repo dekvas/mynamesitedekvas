@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Минимизация булевых функций. Примеры решения задач онлайн</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="page">
+  <div id="header">
+    <div id="logo">
+      <a href="index.html"><img src="images/logo.png" width="224" height="159" class="logo-full" /></a>
+      <a href="index.html"><img src="images/logo-mob.png" width="289" height="62" class="logo-mob" style="display:none;" /></a>
+    </div>
+    <noindex>
+      <div id="slogan">
+        <strong>
+          <span>Примеры решений:</span><br/>минимизация ДНФ
+        </strong>
+      </div>
+    </noindex>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <header>
+        <noindex>
+          <div class="pathway">
+            <a href="index.html"><span>Главная</span></a>
+            <a href="examples.php.html"><span>Примеры решений</span></a>
+            <a href="ex_subject.php@p=mat_all.html"><span>Математика</span></a>
+            <a href="ex_subject.php@p=dm.html"><span>Дискретная математика</span></a>
+            Минимальная ДНФ
+          </div>
+        </noindex>
+      </header>
+
+      <main>
+        <div class="post">
+          <h1>Минимальная ДНФ булевой функции</h1>
+
+          <p>На этой странице вы найдете готовые примеры по булевой алгебре, связанные с минимизацией нормальных формул булевой функции. Помимо минимальной ДНФ, в процессе решения могут быть найдены ядровые импликанты и ядро функции.</p>
+
+          <p>Основные методы получения минимальной ДНФ: равносильные преобразования, метод карт Карно, метод Квайна-МакКласки. Все они разбираются в следующих задачах.</p>
+
+          <h2 class="blue_title"><span>Задачи и решения о минимизации ДНФ булевых функций</span></h2>
+
+          <p><b>Задача 1.</b> Применяя равносильные преобразования привести булеву функцию $f=(\bar x \to \bar y)\to (yz \to \bar xz)$ к минимальной ДНФ.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic2.pdf">Решение задачи о минимальной ДНФ</a></div><br/>
+
+          <p><b>Задача 2.</b> Для заданной логической функции:
+          $$F= \overline {(\bar A \vee B\cdot \bar C)} \cdot  \overline{( \overline {(B \downarrow C)}\cdot D)}$$
+          <br/>- найти дизъюнктивную нормальную форму;<br/>
+          - составить таблицу истинности и построить диаграмму Карно;<br/>
+          - получить минимальную дизъюнктивную нормальную форму;<br/>
+          - от минимальной ДНФ перейти к конъюнктивной нормальной форме.
+          </p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic20.pdf">Получение СДНФ и СКНФ</a></div><br/>
+
+          <p><b>Задача 3.</b> Для функции $f(x_1,x_2,x_3,x_4)$, заданной списком номеров наборов из $Nf$, методом Квайна найти сокращенную и минимальную ДНФ. Список номеров: 0,1,2,3,6,7,8,9,11,15.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic27.pdf">Решение методом Квайна</a></div><br/>
+
+          <p><b>Задача 4.</b> С помощью карт Карно найти сокращенную, все тупиковые и минимальную ДНФ булевой функции $f(x_1,x_2,x_3,x_4)$, заданной вектором значений (1100 0101 0011 0011).</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic28.pdf">Решение методом карт Карно</a></div><br/>
+
+          <p><b>Задача 5.</b> Найти минимальные КНФ булевых функций от аргументов $A,B,C,D$. В квадратных скобках — неопределённые состояния:<br/>
+          $$f=(1,2,5,6,14),\ [4,9,11,12,15].$$
+          </p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic32.pdf">Решение о минимальной КНФ</a></div><br/>
+
+          <p><b>Задача 6.</b> Найти минимальные ДНФ и КНФ булевой функции от аргументов $A,B,C,D$:<br/>
+          $$f=(1,2,3,4,6,7,8,9,11,12,13,14,15).$$
+          </p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic33.pdf">Решение о нахождении минимальных КНФ и ДНФ</a></div><br/>
+
+          <p><b>Задача 7.</b> Для булевой функции $f(x,y,z)=(\bar x \vee \bar y)\wedge(\bar y \vee \bar z)\to(\bar x \vee \bar z)$ найти методом преобразований минимальную ДНФ. По таблице истинности построить СКНФ, по минимальной ДНФ — релейно-контактную схему.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic36.pdf">Минимизация и построение РКС</a></div><br/>
+
+          <p><b>Задача 8.</b> Переключательная функция от трёх аргументов задана десятичным номером. Получить её таблицу истинности, СДНФ, СКНФ, минимизировать по кубу соседних чисел и карте Карно, реализовать минимальную схему на базисе И, ИЛИ, НЕ.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic38.pdf">Минимизация переключательной функции</a></div><br/>
+
+          <p><b>Задача 9.</b> Для булевой функции $f$, заданной в таблице:<br/>
+          а) найти сокращённую ДНФ;<br/>
+          б) найти ядро функции;<br/>
+          в) получить все тупиковые ДНФ и указать минимальные;<br/>
+          г) на карте Карно отметить ядро и покрытия минимальных ДНФ.
+          </p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic42.pdf">Решение задачи о минимизации функции</a></div><br/>
+
+          <p><b>Задача 10.</b> Двумя способами (Кван и Карно) найти сокращённую, ядровую и все минимальные ДНФ для функции $f$, заданной вектором 0101101001001110. Построить минимальную функциональную и контактную схемы.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic44.pdf">Минимизация двумя способами</a></div><br/>
+
+          <div class="back">
+            <a href="ex_subject.php@p=dm.html">Решённые задачи по дискретной математике</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="content_left">
+      <nav>
+        <div class="wrap-mob-menu">
+          <div onclick="toggle('#vipad-1');" class="mob-menu-button"><div class="hide">Меню</div></div>
+        </div>
+        <div id="vipad-1">
+          <div class="nav">
+            <div class="title1 adv"><a href="useful.php.html">Полезные материалы</a></div>
+            <ul>
+              <li><a href="examples.php.html">Примеры решений задач</a></li>
+              <li><a href="st_subject.php@p=resh.html">Онлайн решение задач</a></li>
+              <li><a href="st_subject.php@p=prog.html">Программы-решатели</a></li>
+              <li><a href="stuff.php.html">Учебники и видеоуроки</a></li>
+              <li><a href="math_articles.php.html">Статьи о математике</a></li>
+              <li><a href="neuro_articles.php.html">Нейросети и учеба</a></li>
+              <li class="last"><a href="st_subject.php@p=form.html">Формулы и справочники</a></li>
+            </ul>
+          </div>
+          <div class="nav">
+            <div class="title1 theory"><a href="tv.php.html">Теория вероятностей</a></div>
+            <ul>
+              <li><a href="tv_book.php.html">Онлайн учебник</a></li>
+              <li><a href="ex_subject.php@p=tv.html">Примеры решений</a></li>
+              <li><a href="tv_calc.php.html">Онлайн калькуляторы</a></li>
+              <li><a href="tv_spr.php.html">Формулы и таблицы</a></li>
+              <li class="last"><a href="st_subject.php@p=tv.html">Учебники и ссылки</a></li>
+            </ul>
+          </div>
+        </div>
+        <script defer src="js/adaptive-menu.js"></script>
+        <br/>
+        <div class="share-mini">
+          <a class="mini-btn vk"><div class="mini-icon"></div></a>
+          <a class="mini-btn telegram"><div class="mini-icon"></div></a>
+          <a class="mini-btn facebook"><div class="mini-icon"></div></a>
+        </div>
+      </nav>
+    </div>
+
+    <div id="content_right">
+      <aside>
+        <div class="recommended_banner">
+          <div class="title2">Полезный ресурс</div>
+          <a href="index.html"><img src="Data/matburo_girl.png" width="200" height="257" alt="Полезный баннер"/></a>
+        </div>
+        <div class="responses">
+          <div class="title2"><a href="gb.php.html">Отзывы</a></div>
+          <ul>
+            <li>Елена:<br/><p>С помощью интерактивных задач я наконец поняла методы численного интегрирования! Отличный сервис и понятные объяснения.</p></li>
+            <li>Дмитрий:<br/><p>Уроки по решению систем линейных уравнений и разложению матриц помогли мне справиться с курсовым проектом.</p></li>
+            <li>Ольга:<br/><p>Люблю онлайн-калькуляторы этого сервиса – они мгновенно показывают результаты и строят графики.</p></li>
+            <li class="last">Алексей:<br/><p>Пошаговые решения позволили освоить методы за пару дней.</p></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+  <footer>
+    <div id="footer">
+      <div id="foot_links">
+        <ul>
+          <li><img src="Data/vk.png" width="20px" alt="vk">&nbsp;<a href="#">Сообщество ВКонтакте</a></li>
+          <li><img src="Data/wa20.png" width="20px" alt="WhatsApp">&nbsp;<a href="#">Написать в WhatsApp</a></li>
+          <li><img src="Data/tg.png" width="20px" alt="Telegram">&nbsp;<a href="#">Написать в Telegram</a></li>
+        </ul>
+      </div>
+      <div id="foot_nav">
+        <ul>
+          <li class="contact"><a href="contact.php.html">Контакты</a></li>
+          <li class="search"><a href="searchresult.php.html">Поиск по сайту</a></li>
+          <li class="new"><a href="opd.php.html">Политика ОПД</a></li>
+        </ul>
+      </div>
+      <div id="foot_logo">
+        <a href="index.html"><img src="images/foot_logo.png" width="109" height="78" /></a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script defer src="js/MathJax.js"></script>
+<a href="#" class="scrollup">Наверх</a>
+</body>
+</html>

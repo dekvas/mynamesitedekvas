@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Исчисление высказываний: примеры решений</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- MathJax для рендеринга формул -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<div id="page">
+  <div id="header">
+    <div id="logo">
+      <a href="index.html"><img src="images/logo.png" width="224" height="159" class="logo-full"/></a>
+      <a href="index.html"><img src="images/logo-mob.png" width="289" height="62" class="logo-mob" style="display:none;"/></a>
+    </div>
+    <noindex>
+      <div id="slogan">
+        <strong><span>Бесплатные примеры решений:</span><br/>Исчисление высказываний</strong>
+      </div>
+    </noindex>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <header>
+        <noindex>
+          <div class="pathway">
+            <a href="index.html"><span>Главная</span></a>
+            <a href="examples.php.html"><span>Примеры решений</span></a>
+            <a href="ex_subject.php@p=mat_all.html"><span>Математика</span></a>
+            <a href="ex_subject.php@p=dm.html"><span>Дискретная математика</span></a>
+            Исчисление высказываний
+          </div>
+        </noindex>
+      </header>
+
+      <main>
+        <div class="post">
+          <h1>Примеры решений по исчислению высказываний</h1>
+          <h2 class="blue_title"><span>Исчисление высказываний: решения задач онлайн</span></h2>
+          <p>В этом разделе вы найдете бесплатные примеры решений задач по алгебре логики, связанные с <strong>исчислением высказываний</strong>: упрощение формул, доказательство тавтологии, доказательство логических суждений различными методами (дедукция, резолюция, Квайн, редукция) и т. п.</p>
+
+          <p>Другие разделы по математической логике:</p>
+          <div class="block_grey">
+            <ul class="ul_menu">
+              <li><a href="ex_dm.php@p1=dmlogika.html">Логические задачи</a></li>
+              <li><a href="ex_dm.php@p1=mlip.html">Исчисление предикатов</a></li>
+            </ul>
+          </div>
+          <br/>
+
+          <div class="share-block">
+            <span class="share-label">Поделиться</span>
+            <a class="share-btn vk" title="Поделиться в VK"><div class="b-icon"></div><span>ВКонтакте</span></a>
+            <a class="share-btn telegram" title="Поделиться в Telegram"><div class="b-icon"></div><span>Telegram</span></a>
+            <a class="share-btn facebook" title="Поделиться в Facebook"><div class="b-icon"></div><span>Facebook</span></a>
+          </div>
+
+          <h2 class="blue_title"><span>Исчисление высказываний: решения задач</span></h2>
+
+          <p><b>Задача 1.</b> Упростить формулу:
+          $$ (\bar s \vee \bar y \vee \bar v)\,(s \vee \bar v)\,(\bar y \vee q \vee s)\,(\bar s \vee y)\,(\bar q \vee \bar y \vee v)\,(s \vee v \vee y)\,(\bar s \vee \bar q \vee v) $$
+          </p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic9.pdf">Решение: упрощение формулы ИВ</a></div><br/>
+
+          <p><b>Задача 2.</b> Доказать три клаузы всеми методами: Квайн, редукций, резолюций:
+          $$ A \to (B \to C),\;A \to (B \vee C)\;\Rightarrow\;A \to C $$
+          </p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic12.pdf">Доказательство клауз тремя методами</a></div><br/>
+
+          <p><b>Задача 3.</b> Используя семантические таблицы, доказать, что выражение является тавтологией.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic40.pdf">Решение: доказательство по Бету</a></div><br/>
+
+          <p><b>Задача 4.</b> Доказать в исчислении высказываний:
+          $$(\neg X \vee (Y \vee \neg Z)) \;\vdash\; (\neg (Z\to \neg X) \to \neg (Y \to \neg X)).$$
+          </p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic8.pdf">Решение: доказательство суждения</a></div><br/>
+
+          <p><b>Задача 5.</b> Исследовать логическое суждение: построить таблицу истинности, доказать методом дедукции и резолюции, построить графы вывода.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic15.pdf">Решение: исследование логического суждения</a></div><br/>
+
+          <p><b>Задача 6.</b> Доказать в исчислении высказываний:
+          $$(X\to Z)\to ((Y\to Z)\to ((X \vee Y)\to Z)).$$
+          </p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic7.pdf">Решение: доказательство в ИВ</a></div><br/>
+
+          <p><b>Задача 7.</b> Составить клаузу и два следствия по легенде о марксистах и диалектиках.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Logic13.pdf">Решение: клаузы и следствия</a></div><br/>
+
+          <div class="back">
+            <a href="ex_subject.php@p=dm.html">Назад: Дискретная математика</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="content_left">
+      <nav>
+        <div class="wrap-mob-menu">
+          <div onclick="toggle('#vipad-1');" class="mob-menu-button"><div class="hide">Меню</div></div>
+        </div>
+        <div id="vipad-1">
+          <div class="nav">
+            <div class="title1 adv"><a href="useful.php.html">Полезные материалы</a></div>
+            <ul>
+              <li><a href="examples.php.html">Примеры решений задач</a></li>
+              <li><a href="st_subject.php@p=resh.html">Онлайн решение задач</a></li>
+              <li><a href="st_subject.php@p=prog.html">Программы-решатели</a></li>
+              <li><a href="stuff.php.html">Учебники и видеоуроки</a></li>
+              <li><a href="math_articles.php.html">Статьи о математике</a></li>
+              <li><a href="neuro_articles.php.html">Нейросети и учеба</a></li>
+              <li class="last"><a href="st_subject.php@p=form.html">Формулы и справочники</a></li>
+            </ul>
+          </div>
+          <div class="nav">
+            <div class="title1 theory"><a href="tv.php.html">Теория вероятностей</a></div>
+            <ul>
+              <li><a href="tv_book.php.html">Онлайн учебник</a></li>
+              <li><a href="ex_subject.php@p=tv.html">Примеры решений</a></li>
+              <li><a href="tv_calc.php.html">Онлайн калькуляторы</a></li>
+              <li><a href="tv_spr.php.html">Формулы и таблицы</a></li>
+              <li class="last"><a href="st_subject.php@p=tv.html">Учебники и ссылки</a></li>
+            </ul>
+          </div>
+        </div>
+        <script defer src="js/adaptive-menu.js"></script>
+        <br/>
+        <div class="share-mini">
+          <a class="mini-btn vk"><div class="mini-icon"></div></a>
+          <a class="mini-btn telegram"><div class="mini-icon"></div></a>
+          <a class="mini-btn facebook"><div class="mini-icon"></div></a>
+        </div>
+      </nav>
+    </div>
+
+    <div id="content_right">
+      <aside>
+        <div class="recommended_banner">
+          <div class="title2">Полезный ресурс</div>
+          <a href="index.html"><img src="Data/matburo_girl.png" width="200" height="257" alt="Полезный баннер"/></a>
+        </div>
+        <div class="responses">
+          <div class="title2"><a href="gb.php.html">Отзывы</a></div>
+          <ul>
+            <li>Елена:<br/><p>С помощью интерактивных задач я поняла методы численного интегрирования! Отличный сервис и понятные объяснения.</p></li>
+            <li>Дмитрий:<br/><p>Уроки по решению систем линейных уравнений помогли мне справиться с курсовым проектом.</p></li>
+            <li>Ольга:<br/><p>Люблю онлайн-калькуляторы – они мгновенно показывают результаты.</p></li>
+            <li class="last">Алексей:<br/><p>Пошаговые решения позволили освоить методы быстро.</p></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+  <footer>
+    <div id="footer">
+      <div id="foot_links">
+        <ul>
+          <li><img src="Data/vk.png" width="20px" alt="vk">&nbsp;<a href="#">Сообщество ВКонтакте</a></li>
+          <li><img src="Data/wa20.png" width="20px" alt="WhatsApp">&nbsp;<a href="#">Написать в WhatsApp</a></li>
+          <li><img src="Data/tg.png" width="20px" alt="Telegram">&nbsp;<a href="#">Написать в Telegram</a></li>
+        </ul>
+      </div>
+      <div id="foot_nav">
+        <ul>
+          <li class="contact"><a href="contact.php.html">Контакты</a></li>
+          <li class="search"><a href="searchresult.php.html">Поиск по сайту</a></li>
+          <li class="new"><a href="opd.php.html">Политика ОПД</a></li>
+        </ul>
+      </div>
+      <div id="foot_logo">
+        <a href="index.html"><img src="images/foot_logo.png" width="109" height="78"/></a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

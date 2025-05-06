@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Решения из сборника Тишина</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- MathJax для рендеринга формул -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<div id="page">
+  <div id="header">
+    <div id="logo">
+      <a href="index.html"><img src="images/logo.png" width="224" height="159" class="logo-full"/></a>
+      <a href="index.html"><img src="images/logo-mob.png" width="289" height="62" class="logo-mob" style="display:none;"/></a>
+    </div>
+    <noindex>
+      <div id="slogan">
+        <strong><span>Примеры решений:</span><br/>Решения из Тишина</strong>
+      </div>
+    </noindex>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <header>
+        <noindex>
+          <div class="pathway">
+            <a href="index.html"><span>Главная</span></a>
+            <a href="examples.php.html"><span>Примеры решений</span></a>
+            <a href="ex_subject.php@p=mat_all.html"><span>Математика</span></a>
+            <a href="ex_subject.php@p=dm.html"><span>Дискретная математика</span></a>
+            Решения из Тишина
+          </div>
+        </noindex>
+      </header>
+      <main>
+        <div class="post">
+          <h1>Дискретная математика в примерах и задачах (Тишин)</h1>
+          <p>Популярный сборник задач по дискретной математике Тишина часто используется для домашних заданий студентов технических специальностей. Здесь приведены примеры решений заданий из этого сборника, которые помогут вам в самостоятельной работе.</p>
+
+          <div class="block_grey">
+            <ul class="ul_menu">
+              <li><a href="ex_dm.php@p1=dmtish.html#1">Немного фактов</a></li>
+              <li><a href="ex_dm.php@p1=dmtish.html#2">Примеры задач</a></li>
+              <li><a href="ex_dm.php@p1=dmtish.html#3">Полезные ссылки</a></li>
+            </ul>
+          </div>
+
+          <a id="1"></a>
+          <h2 class="blue_title"><span>Немного фактов</span></h2>
+          <img class="bounded" src="Examples/tishin.jpg" width="136" height="200" alt="Обложка Тишина"/>
+          <ul class="list">
+            <li>Сборник основан на лекциях и практических занятиях автора.</li>
+            <li>Последнее издание 2016 года содержит 336 страниц и множество задач.</li>
+            <li>Каждое задание представлено в нескольких вариантах.</li>
+            <li>Все задания снабжены примерами решений для самостоятельной работы.</li>
+          </ul>
+
+          <a id="2"></a>
+          <h2 class="blue_title"><span>Примеры задач</span></h2>
+          <p><b>Задача 1.</b> Пусть $A$, $B$ и $C$ — множества точек плоскости с условиями $\alpha$, $\beta$ и $\gamma$ соответственно. Изобразите в системе координат $xOy$ множество $D$, полученное по формуле $\delta$.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Tishin_5.pdf">Решение задачи 1.1.3</a></div><br/>
+
+          <p><b>Задача 2.</b> Дано соответствие $Г=(X,Y,G)$, где $X=\{a,b,c,d\}$, $Y=\{1,2,3,4\}$, $G=\{(a,3),(b,4),(c,3),(d,1)\}$. Изобразить соответствие в виде графа, определить его свойства, найти образ и прообраз заданных множеств.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Tishin_1.pdf">Решение задачи 1.3.1</a></div><br/>
+
+          <p><b>Задача 3.</b> Для отношения $Ф=(\{1,2,3,4,5\},G)$, где $G=\{(3,5),(4,2),(1,2)\}$, достроить его до различных типов отношений: эквивалентности, частичного и линейного порядка, строгого порядка.</p>
+          <div align="right"><a class="pdf" target="_blank" href="Examples/Files/Tishin_2.pdf">Решение задачи 1.4.4</a></div><br/>
+
+          <a id="3"></a>
+          <h2 class="blue_title"><span>Полезные ссылки</span></h2>
+          <ul class="list2">
+            <li><a href="#">Примеры решений задач</a></li>
+            <li><a href="#">Учебные материалы по дискретной математике</a></li>
+            <li><a href="#">Формулы и справочники</a></li>
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <div id="content_left">
+      <nav>
+        <div class="wrap-mob-menu">
+          <div onclick="toggle('#vipad-1');" class="mob-menu-button"><div class="hide">Меню</div></div>
+        </div>
+        <div id="vipad-1">
+          <div class="nav">
+            <div class="title1 adv"><a href="useful.php.html">Полезные материалы</a></div>
+            <ul>
+              <li><a href="examples.php.html">Примеры решений задач</a></li>
+              <li><a href="st_subject.php@p=resh.html">Онлайн решение задач</a></li>
+              <li><a href="st_subject.php@p=prog.html">Программы-решатели</a></li>
+              <li><a href="stuff.php.html">Учебники и видеоуроки</a></li>
+              <li><a href="math_articles.php.html">Статьи о математике</a></li>
+              <li><a href="neuro_articles.php.html">Нейросети и учеба</a></li>
+              <li class="last"><a href="st_subject.php@p=form.html">Формулы и справочники</a></li>
+            </ul>
+          </div>
+          <div class="nav">
+            <div class="title1 theory"><a href="tv.php.html">Теория вероятностей</a></div>
+            <ul>
+              <li><a href="tv_book.php.html">Онлайн учебник</a></li>
+              <li><a href="ex_subject.php@p=tv.html">Примеры решений</a></li>
+              <li><a href="tv_calc.php.html">Онлайн калькуляторы</a></li>
+              <li><a href="tv_spr.php.html">Формулы и таблицы</a></li>
+              <li class="last"><a href="st_subject.php@p=tv.html">Учебники и ссылки</a></li>
+            </ul>
+          </div>
+        </div>
+        <script defer src="js/adaptive-menu.js"></script>
+        <br/>
+        <div class="share-mini">
+          <a class="mini-btn vk"><div class="mini-icon"></div></a>
+          <a class="mini-btn telegram"><div class="mini-icon"></div></a>
+          <a class="mini-btn facebook"><div class="mini-icon"></div></a>
+        </div>
+      </nav>
+    </div>
+
+    <div id="content_right">
+      <aside>
+        <div class="recommended_banner">
+          <div class="title2">Полезный ресурс</div>
+          <a href="index.html"><img src="Data/matburo_girl.png" width="200" height="257" alt="Полезный баннер"/></a>
+        </div>
+        <div class="responses">
+          <div class="title2"><a href="gb.php.html">Отзывы</a></div>
+          <ul>
+            <li>Елена:<br/><p>С помощью интерактивных задач я лучше поняла методы решений!</p></li>
+            <li>Дмитрий:<br/><p>Хорошие подробные примеры.</p></li>
+            <li>Ольга:<br/><p>Очень полезно и информативно.</p></li>
+            <li class="last">Алексей:<br/><p>Спасибо за доступные объяснения!</p></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+  <footer>
+    <div id="footer">
+      <div id="foot_links">
+        <ul>
+          <li><img src="Data/vk.png" width="20px" alt="vk">&nbsp;<a href="#">Сообщество ВКонтакте</a></li>
+          <li><img src="Data/wa20.png" width="20px" alt="WhatsApp">&nbsp;<a href="#">Написать в WhatsApp</a></li>
+          <li><img src="Data/tg.png" width="20px" alt="Telegram">&nbsp;<a href="#">Написать в Telegram</a></li>
+        </ul>
+      </div>
+      <div id="foot_nav">
+        <ul>
+          <li class="contact"><a href="contact.php.html">Контакты</a></li>
+          <li class="search"><a href="searchresult.php.html">Поиск по сайту</a></li>
+          <li class="new"><a href="opd.php.html">Политика ОПД</a></li>
+        </ul>
+      </div>
+      <div id="foot_logo">
+        <a href="index.html"><img src="images/foot_logo.png" width="109" height="78"/></a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<a href="#" class="scrollup">Наверх</a>
+</body>
+</html>
